@@ -13,11 +13,12 @@ body{
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
+    justify-content: center;
 }
 
 .column{
     max-width: 33%;
-    flex: 25%;
+    flex: 33%;
     padding: 0 4px;
 }
 
@@ -27,16 +28,23 @@ body{
 }
 
 
-@media screen and(max-width: 800px){
+@media screen and (max-width: 800px){
     .column{
         flex: 50%;
         max-width: 50%;
     }
 }
 
-@media screen and(max-width: 500px){
+@media screen and (max-width: 500px){
     .column{
         flex: 100%;
         max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .column{
+        flex: 33%;
+        max-width: 33%;
     }
 }
